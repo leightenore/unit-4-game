@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crystals Collector Game</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">   
+
+        <div id="title-text" class="row">
+            <div class="col-md-6">
+                <p><h1>Crystals Collector!</h1></p>
+            </div>
+        </div>
+
+        <div id="directions-text" class="row">
+            <div class="col-md-6">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>The value of each crystal will change every time the game starts.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div id="randomNumBox" class="col-md-3">
+            </div>
+
+            <div id="winsLossesBox" class="col-md-3">
+            </div>
+
+        </div>
+
+        <div id="crystals" class="row">
+
+            <div class="col-md-6">
+            <img id="blueCrystal" src="assets/images/bluecrystal.jpg">
+
+            <img id="pinkCrystal" src="assets/images/pinkcrystal.jpg">
+
+            <img id="greenCrystal" src="assets/images/greencrystal.jpg">
+
+            <img id="purpleCrystal" src="assets/images/purplecrystal.jpg">
+            </div>
+
+        </div>
+
+        <div id="scoreBox" class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
