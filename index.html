@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
+    <!-- link to jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -36,9 +39,13 @@
         <div class="row">
 
             <div id="randomNumBox" class="col-md-3">
+            <h3>Goal Number: <span id="randomNum"></span> </h3>
             </div>
 
             <div id="winsLossesBox" class="col-md-3">
+                <h4>Wins: <span id="numWins"></span></h4>
+                <br>
+                <h4>Losses: <span id="numLosses"></span></h4> 
             </div>
 
         </div>
@@ -46,19 +53,20 @@
         <div id="crystals" class="row">
 
             <div class="col-md-6">
-            <img id="blueCrystal" src="assets/images/bluecrystal.jpg">
+            <img id="blueCrystal" class="crystal-image" src="assets/images/bluecrystal.jpg" alt="blue crystal">
 
-            <img id="pinkCrystal" src="assets/images/pinkcrystal.jpg">
+            <img id="pinkCrystal" class="crystal-image" src="assets/images/pinkcrystal.jpg" alt="pink crystal">
 
-            <img id="greenCrystal" src="assets/images/greencrystal.jpg">
+            <img id="greenCrystal" class="crystal-image" src="assets/images/greencrystal.jpg" alt="green crystal">
 
-            <img id="purpleCrystal" src="assets/images/purplecrystal.jpg">
+            <img id="purpleCrystal" class="crystal-image" src="assets/images/purplecrystal.jpg" alt="purple crystal">
             </div>
 
         </div>
 
         <div id="scoreBox" class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+            <h3>Your Score: <span id="userScore"></span></h3>
             </div>
         </div>
 
