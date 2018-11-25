@@ -10,17 +10,22 @@ var crystalValues = [];
 //===========================================================================================================
 
 function createArray() {
+
     for (i = 0; i < 4; i++) {
-    var randomValue = Math.floor((Math.random() * 12) + 1);
     
-    if (crystalValues.indexOf(randomValue) === -1) {
-        crystalValues.push(randomValue)
-        };
-    console.log(crystalValues);
+        while (crystalValues.length < 4) {
+
+            var randomValue = Math.floor((Math.random() * 12) + 1);
+    
+            if (crystalValues.indexOf(randomValue) === -1) {
+                crystalValues.push(randomValue)
+            };
+
+            console.log(crystalValues);
+        }
     }
 }
 
-//make it so that this loop returns 4 unique values, doesn't repeat numbers
 
 function gameReset() {
     targetNumber = Math.floor((Math.random() * 102) + 19);
@@ -32,6 +37,7 @@ function gameReset() {
     crystalValues = [];
     createArray();
 }
+
 
 function winLoseCheck() {
     if (counter === targetNumber) {
