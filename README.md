@@ -1,6 +1,6 @@
 # unit-4-game
 
-[a link](https://leightenore.github.io/unit-4-game/)
+[https://leightenore.github.io/unit-4-game/](https://leightenore.github.io/unit-4-game/)
 
 Crystal Collector!
 
